@@ -23,3 +23,9 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Observations
+
+- `auth.createCustomToken()` will create a new auth user if user with uid doesn't exist
+- `developerClaims` passed to `auth.createCustomToken()` will merge with the persisted user claims before the client ID Token is constructed, but they will affect the persisted user claims
+- Every time the user token is refreshed, it will once again merge `developerClaims` with the latest persisted user claims
