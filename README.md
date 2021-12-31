@@ -9,6 +9,8 @@ https://firebase.google.com/docs/auth/web/custom-auth
 
 ## Getting Started
 
+Download service account key from [Firebase console](https://console.firebase.google.com/) -> Project settings -> Service accounts and save it in root of this project as `serviceAccount.json`.
+
 ```bash
 npm ci
 npm run dev
