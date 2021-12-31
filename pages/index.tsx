@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Auth from '../components/Auth';
+import Claims from '../components/Claims';
 import Logs from '../components/Logs';
 import styles from '../styles/Home.module.css';
 
@@ -22,6 +23,9 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.card}>
           <Logs />
+        </div>
+        <div className={styles.card}>
+          <Claims />
         </div>
       </div>
     </div>
