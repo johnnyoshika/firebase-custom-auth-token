@@ -12,6 +12,12 @@ https://firebase.google.com/docs/auth/web/custom-auth
 Download service account key from [Firebase console](https://console.firebase.google.com/) -> Project settings -> Service accounts and save it in root of this project as `serviceAccount.json`.
 
 ```bash
+cp .env.sample .env.local
+```
+
+Populate .env.local with Firebase client SDK config from [Firebase console](https://console.firebase.google.com/) -> Project settings -> General -> Web apps.
+
+```bash
 npm ci
 npm run dev
 ```
